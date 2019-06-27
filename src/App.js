@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {observer} from 'mobx-react'
 
+// 装饰器语法
+@observer
 function App() {
   return (
     <div className="App">
