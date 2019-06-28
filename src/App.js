@@ -2,12 +2,14 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { observer, inject } from "mobx-react";
+import DevTools from "mobx-react-devtools";
 
-@observer
+// @observer
 class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <DevTools />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
